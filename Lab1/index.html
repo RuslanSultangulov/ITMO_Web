@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Weather</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+<div class="grid-container">
+    <header>
+        <h1>Погода здесь</h1>
+        <button class="btn-update for-large-screens">Обновить геолокацию</button>
+        <button class="btn-update for-small-screens">&#x21bb;</button>
+    </header>
+    <main>
+        <section class="main-city">
+            <h2>Saint Petersburg</h2>
+            <div class="img-and-temperature">
+                <img src="img/cloud.png" alt="Иконка погоды">
+                <span class="temperature">8°С</span>
+            </div>
+        </section>
+        <section class="main-city-charts">
+            <ul>
+                <li>
+                    <span class="chart-name">Ветер</span>
+                    <span class="chart-value">Moderate breeze, 6.0 m/s, North-northwest</span>
+                </li>
+                <li>
+                    <span class="chart-name">Облачность</span>
+                    <span class="chart-value">Broken clouds</span>
+                </li>
+                <li>
+                    <span class="chart-name">Давление</span>
+                    <span class="chart-value">1013 hpa</span>
+                </li>
+                <li>
+                    <span class="chart-name">Влажность</span>
+                    <span class="chart-value">52 %</span>
+                </li>
+                <li>
+                    <span class="chart-name">Координаты</span>
+                    <span class="chart-value">[59.88, 30.42]</span>
+                </li>
+            </ul>
+        </section>
+        <section class="favourites">
+            <h2>Избранное</h2>
+            <form action="" class="add-city-form" method="POST">
+                <input type="text" name="add-city" placeholder="Добавить новый город">
+                <input type="submit" class="btn" value="+">
+            </form>
+        </section>
+        <ol class="cities">
+            <li>
+                <div class="city-charts">
+                    <div class="city-charts-left">
+                        <h3>Moscow</h3>
+                        <span class="temperature">5°С</span>
+                        <img src="img/cloud.png" alt="Иконка погоды">
+                    </div>
+                    <button class="btn">x</button>
+                </div>
+                <div class="city-values">
+                    <ul>
+                        <li>
+                            <span class="chart-name">Ветер</span>
+                            <span class="chart-value">Moderate breeze, 6.0 m/s, North-northwest</span>
+                        </li>
+                        <li>
+                            <span class="chart-name">Облачность</span>
+                            <span class="chart-value">Broken clouds</span>
+                        </li>
+                        <li>
+                            <span class="chart-name">Давление</span>
+                            <span class="chart-value">1013 hpa</span>
+                        </li>
+                        <li>
+                            <span class="chart-name">Влажность</span>
+                            <span class="chart-value">52 %</span>
+                        </li>
+                        <li>
+                            <span class="chart-name">Координаты</span>
+                            <span class="chart-value">[59.88, 30.42]</span>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <div class="city-charts">
+                    <div class="city-charts-left">
+                        <h3>Helsinki</h3>
+                        <span class="temperature">3°С</span>
+                        <img src="img/cloud.png" alt="Иконка погоды">
+                    </div>
+                    <button class="btn">x</button>
+                </div>
+                <div class="city-values">
+                    <ul>
+                        <li>
+                            <span class="chart-name">Ветер</span>
+                            <span class="chart-value">Moderate breeze, 6.0 m/s, North-northwest</span>
+                        </li>
+                        <li>
+                            <span class="chart-name">Облачность</span>
+                            <span class="chart-value">Broken clouds</span>
+                        </li>
+                        <li>
+                            <span class="chart-name">Давление</span>
+                            <span class="chart-value">1013 hpa</span>
+                        </li>
+                        <li>
+                            <span class="chart-name">Влажность</span>
+                            <span class="chart-value">52 %</span>
+                        </li>
+                        <li>
+                            <span class="chart-name">Координаты</span>
+                            <span class="chart-value">[59.88, 30.42]</span>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <div class="city-charts">
+                    <div class="city-charts-left">
+                        <h3>Moscow</h3>
+                        <span class="temperature">5°С</span>
+                        <img src="img/cloud.png" alt="Иконка погоды">
+                    </div>
+                    <button class="btn">x</button>
+                </div>
+                <div class="city-values">
+                    <ul>
+                        <li>
+                            <span class="chart-name">Ветер</span>
+                            <span class="chart-value">Moderate breeze, 6.0 m/s, North-northwest</span>
+                        </li>
+                        <li>
+                            <span class="chart-name">Облачность</span>
+                            <span class="chart-value">Broken clouds</span>
+                        </li>
+                        <li>
+                            <span class="chart-name">Давление</span>
+                            <span class="chart-value">1013 hpa</span>
+                        </li>
+                        <li>
+                            <span class="chart-name">Влажность</span>
+                            <span class="chart-value">52 %</span>
+                        </li>
+                        <li>
+                            <span class="chart-name">Координаты</span>
+                            <span class="chart-value">[59.88, 30.42]</span>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <div class="city-charts">
+                    <div class="city-charts-left">
+                        <h3>Helsinki</h3>
+                        <span class="temperature">3°С</span>
+                        <img src="img/cloud.png" alt="Иконка погоды">
+                    </div>
+                    <button class="btn">x</button>
+                </div>
+                <div class="city-values">
+                    <ul>
+                        <li>
+                            <span class="chart-name">Ветер</span>
+                            <span class="chart-value">Moderate breeze, 6.0 m/s, North-northwest</span>
+                        </li>
+                        <li>
+                            <span class="chart-name">Облачность</span>
+                            <span class="chart-value">Broken clouds</span>
+                        </li>
+                        <li>
+                            <span class="chart-name">Давление</span>
+                            <span class="chart-value">1013 hpa</span>
+                        </li>
+                        <li>
+                            <span class="chart-name">Влажность</span>
+                            <span class="chart-value">52 %</span>
+                        </li>
+                        <li>
+                            <span class="chart-name">Координаты</span>
+                            <span class="chart-value">[59.88, 30.42]</span>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <div class="city-charts">
+                    <div class="city-charts-left">
+                        <h3>Moscow</h3>
+                        <span class="temperature">5°С</span>
+                        <img src="img/cloud.png" alt="Иконка погоды">
+                    </div>
+                    <button class="btn">x</button>
+                </div>
+                <div class="city-values">
+                    <ul>
+                        <li>
+                            <span class="chart-name">Ветер</span>
+                            <span class="chart-value">Moderate breeze, 6.0 m/s, North-northwest</span>
+                        </li>
+                        <li>
+                            <span class="chart-name">Облачность</span>
+                            <span class="chart-value">Broken clouds</span>
+                        </li>
+                        <li>
+                            <span class="chart-name">Давление</span>
+                            <span class="chart-value">1013 hpa</span>
+                        </li>
+                        <li>
+                            <span class="chart-name">Влажность</span>
+                            <span class="chart-value">52 %</span>
+                        </li>
+                        <li>
+                            <span class="chart-name">Координаты</span>
+                            <span class="chart-value">[59.88, 30.42]</span>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <div class="city-charts">
+                    <div class="city-charts-left">
+                        <h3>Helsinki</h3>
+                        <span class="temperature">3°С</span>
+                        <img src="img/cloud.png" alt="Иконка погоды">
+                    </div>
+                    <button class="btn">x</button>
+                </div>
+                <div class="city-values">
+                    <ul>
+                        <li>
+                            <span class="chart-name">Ветер</span>
+                            <span class="chart-value">Moderate breeze, 6.0 m/s, North-northwest</span>
+                        </li>
+                        <li>
+                            <span class="chart-name">Облачность</span>
+                            <span class="chart-value">Broken clouds</span>
+                        </li>
+                        <li>
+                            <span class="chart-name">Давление</span>
+                            <span class="chart-value">1013 hpa</span>
+                        </li>
+                        <li>
+                            <span class="chart-name">Влажность</span>
+                            <span class="chart-value">52 %</span>
+                        </li>
+                        <li>
+                            <span class="chart-name">Координаты</span>
+                            <span class="chart-value">[59.88, 30.42]</span>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+        </ol>
+    </main>
+</div>
+</body>
+
+</html>
